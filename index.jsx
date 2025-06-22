@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
-import About from "./pages/Route"
-import About from "./pages/Link"
+import Vans from "./pages/Vans"
 
+import "./server" // Importing the server file to set up the mock server
 function App() {
   return (
     <BrowserRouter>
@@ -13,15 +13,14 @@ function App() {
         <Link className="site-logo" to="/">#VanLife</Link>
         <nav>
           <Link to="/about">About</Link>
-          <Link to="/Route">Route</Link>
-          <Link to="/Link">Link</Link>
+
+          <Link to="/vans">Vans</Link>
         </nav>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Route" element={<Route />} />
-        <Route path="/Link" element={<Link />} />
+        <Route path="/vans" element={<Vans />} />
       </Routes>
     </BrowserRouter>
   )
