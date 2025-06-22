@@ -5,7 +5,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Vans from "./pages/Vans"
 
-import "./server" // Importing the server file to set up the mock server
+// import "./server" // Importing the server file to set up the mock server
 function App() {
   return (
     <BrowserRouter>
