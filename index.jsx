@@ -1,11 +1,10 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./Home"
 import About from "./About"
-import Vans from "./Vans/Vans"
-import VanDetail from "./Vans/VanDetail"
-import Layout from "./components/Layout"
+import Vans from "./pages/Host/Vans/Vans"
+import VanDetail from "./pages/Host/Vans/VanDetail"
+import HostLayout from "./components/HostLayout";
 
 import Header from "./components/Header"
 
