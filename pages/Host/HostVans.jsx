@@ -64,10 +64,12 @@ export default function HostVans() {
                 }
                 {vans.map(van => (
                     <div>
-                        imageUrl={van.imageUrl} alt={van.name} className="host-van-image" />
+                        <img src={van.imageUrl} alt={van.name} className="host-van-image" />
                         <h2>{van.name}</h2>
                         <p>${van.price}/day</p>
                     </div>
                 ))}
+            </div>
         </section>
+    )
 }

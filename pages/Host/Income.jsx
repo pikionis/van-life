@@ -7,12 +7,7 @@ export default function Income() {
         { amount: 560, date: "Dec 12, '22", id: "2" },
         { amount: 980, date: "Dec 3, '22", id: "3" },
     ]
-    
 
-    
-    
-    
-    
     
     return (
 
@@ -39,17 +34,11 @@ export default function Income() {
                     <div key={item.id} className="transaction">
                         <h2>${item.amount}</h2>
                         <p>{item.date}</p>
+                     </div>
 
                 ))}
-            
-            
-            
-            
             </div>
-
-
-
-        </Section>
+        </section>
         
     )
 }
