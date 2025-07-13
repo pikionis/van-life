@@ -17,7 +17,7 @@ import HostVanDetail from "./pages/Host/HostVanDetail"
 import Header from "./components/Header"
 
 
- import "./server" // Importing the server file to set up the mock server
+import "./server" // Importing the server file to set up the mock server
 function App() {
   return (
     <BrowserRouter>
