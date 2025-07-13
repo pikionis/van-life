@@ -19,16 +19,17 @@ export default function Header() {
             <nav>
                 <NavLink 
                     to="/host" 
-                    style={({ isActive }) => isActive ? "active-link" : "null"}>Host
+                    className={({ isActive }) => isActive ? "active-link" : ""}>
+                    Host
                 </NavLink>
                 <NavLink 
                     to="/about" 
-                    style={({ isActive }) => isActive ? "active-link" : "null"}>
+                    className={({ isActive }) => isActive ? "active-link" : ""}>
                     About
                 </NavLink>
                 <NavLink 
                     to="/vans" 
-                    style={({ isActive }) => isActive ? "active-link" : "null"}>
+                    className={({ isActive }) => isActive ? "active-link" : ""}>
                     Vans
                 </NavLink>
                 <Link to="login" className="login-link">
@@ -38,4 +39,5 @@ export default function Header() {
             </nav>
         </header>
     )
+    
 }
