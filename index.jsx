@@ -17,9 +17,7 @@ import HostVanDetail from "./pages/Host/HostVanDetail"
 import Header from "./components/Header"
 
 
-if (process.env.NODE_ENV === "development") {
-  import("./server.js"); // Or whatever the correct path is relative to this file
-}
+ import "./server" // Importing the server file to set up the mock server
 function App() {
   return (
     <BrowserRouter>
