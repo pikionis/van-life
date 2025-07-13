@@ -41,10 +41,6 @@ const db = getFirestore(app)
 // };
 
 
-
-const app = initializeApp(firebaseConfig)
-const db = getFirestore(app)
-
 // Refactoring the fetching functions below
 const vansCollectionRef = collection(db, "vans")
 
