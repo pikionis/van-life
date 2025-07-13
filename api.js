@@ -63,13 +63,20 @@ export async function getVan(id) {
 }
 
 export async function getHostVans() {
-    const q = query(vansCollectionRef, where("hostId", "==", "123"))
-    const snapshot = await getDocs(q)
-    const vans = snapshot.docs.map(doc => ({
-        ...doc.data(),
-        id: doc.id
-    }))
-    return vans
+    // This will now fetch from your Mirage JS mock server
+    const res = await fetch("/api/host/vans"); // Ensure this matches your Mirage route
+    const data = await res.json(); // Data will be { "vans": [...] } from Mirage
+
+    if (!res.ok) {
+        throw {
+            message: data.message,
+            statusText: res.statusText,
+            status: res.status
+        };
+    }
+
+    // Return the nested array from Mirage's response
+    return data.vans; // This is the fix we discussed for Mirage's default serializer
 }
 
 /* 

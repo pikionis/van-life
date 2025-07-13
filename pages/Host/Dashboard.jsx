@@ -27,13 +27,13 @@ export default function Dashboard() {
                      <p>Income last <span className="bold">30 days</span></p>
                      <h2>$2,260</h2>
                 </div>
-                <link to="income">Details</link>
+                <Link to="income">Details</Link>
             </section>
             <section className="host-dashboard-reviews">
                 <h2>Review score </h2>
                 <BsStarFill className="star" />
                 <p><span>5.0</span>/5</p>
-                 <link to="review">Details</link>
+                 <Link to="review">Details</Link>
             </section>
             <section className="host-dashboard-vans">
                 <div>
