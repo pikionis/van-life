@@ -1,4 +1,5 @@
-import { initializeApp } from "firebase/app"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
 import {
     getFirestore,
     collection,
@@ -10,14 +11,36 @@ import {
     documentId
 } from "firebase/firestore/lite"
 
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyD_k3v3HK3tKEqhlqFHPkwogW7PqEqhGhk",
-    authDomain: "vanlife-a1af5.firebaseapp.com",
-    projectId: "vanlife-a1af5",
-    storageBucket: "vanlife-a1af5.appspot.com",
-    messagingSenderId: "803007000356",
-    appId: "1:803007000356:web:446cd3a1ca406839258db1"
+  apiKey: "AIzaSyC06OcSqjMiL0aXV1ie1wy2O-CfSteGWZk",
+  authDomain: "vanlife-repo.firebaseapp.com",
+  projectId: "vanlife-repo",
+  storageBucket: "vanlife-repo.firebasestorage.app",
+  messagingSenderId: "741785127525",
+  appId: "1:741785127525:web:ef7581a56559ce251e948c"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+
+// import { initializeApp } from "firebase/app"
+
+// const firebaseConfig = {
+//     apiKey: "AIzaSyD_k3v3HK3tKEqhlqFHPkwogW7PqEqhGhk",
+//     authDomain: "vanlife-a1af5.firebaseapp.com",
+//     projectId: "vanlife-a1af5",
+//     storageBucket: "vanlife-a1af5.appspot.com",
+//     messagingSenderId: "803007000356",
+//     appId: "1:803007000356:web:446cd3a1ca406839258db1"
+// };
+
+
 
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
