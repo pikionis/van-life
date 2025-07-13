@@ -32,7 +32,11 @@ export default function HostVanDetail() {
         return <h1>There was an error: {error.message}</h1>
     }
     
-    
+    const activeStyles = {
+        fontWeight: "bold",
+        textDecoration: "underline",
+        color: "#161616"
+    }
     
     return (
         <>
